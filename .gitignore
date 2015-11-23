@@ -35,3 +35,5 @@ tools/typings/*
 
 .DS_store
 .idea
+
+src/app/bundle.js

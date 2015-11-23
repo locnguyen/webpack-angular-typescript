@@ -1,0 +1,44 @@
+<md-content layout="column" layout-align="center center" style="min-height:500px;">
+    <div>
+        <img width="80" src="{{vm.logos.webpack}}" />
+        <img width="80" src="{{vm.logos.angular}}" />
+        <img width="80" src="{{vm.logos.typescript}}" />
+    </div>
+
+    <md-card style="min-width:400px;">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2 class="md-flex">Log in</h2>
+            </div>
+        </md-toolbar>
+        <md-card-content>
+            <form name="loginForm">
+                <md-input-container>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required ng-model="vm.user.email">
+                    <div ng-messages="loginForm.email.$error" ng-if="loginForm.email.$touched && loginForm.email.$invalid">
+                        <div ng-message="email">A valid email is required</div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required ng-model="vm.user.password">
+
+                    <div ng-messages="loginForm.password.$error" ng-if="loginForm.password.$touched && loginForm.password.$invalid">
+                        <div ng-message="required">This is required!</div>
+                    </div>
+                </md-input-container>
+
+                <md-button class="md-raised md-primary" ng-click="vm.doLogin(vm.user)">Log in</md-button>
+            </form>
+        </md-card-content>
+    </md-card>
+
+    <md-card>
+        <pre>
+            {{vm.position | json}}
+        </pre>
+    </md-card>
+</md-content>
+

@@ -1,7 +1,7 @@
-require('angular');
-require('angular-ui-router');
-require('angular-material');
-require('angular-material/angular-material.scss');
+import 'angular';
+import 'angular-ui-router';
+import 'angular-material';
+import 'angular-material/angular-material.scss';
 
 const appModule = angular.module('materialSample', ['ui.router', 'ngMaterial']);
 const serviceModules = <Function>require('./common/services');

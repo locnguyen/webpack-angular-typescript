@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "sourceMap": true,
+    "module": "commonjs"
+  },
+  "files": [
+    "./tools/typings/require.d.ts",
+    "./tools/typings/tsd.d.ts",
+    "./tools/typings/app.d.ts"
+  ]
+}

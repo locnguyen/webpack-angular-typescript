@@ -1,12 +1,16 @@
 {
   "name": "webpack-angular-typescript",
   "version": "1.0.0",
-  "description": "A start kit for ",
+  "description": "A start kit for using Webpack with Angular and TypeScript. Bonus of Material Design",
   "main": "src/app/app.ts",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/locnguyen/webpack-angular-typescript"
+  },
   "scripts": {
     "start": "node node_modules/.bin/webpack-dev-server --content-base src"
   },
-  "keywords": [],
+  "keywords": ["webpack", "angular", "typescript", "material design"],
   "author": "Loc Nguyen, lochnguyen@gmail.com",
   "license": "MIT",
   "dependencies": {
